@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+  }
+  body{
+      display:contents;
+  }
+  nav{
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url("background.jpg");
+    height: 80px;
+    width: 100%;
+  }
+
+  .logo{
+      width: 80px;
+      height: 80px;
+    line-height: 80px;
+      margin-left: 50px;
+  }
+  nav ul{
+    float: right;
+    margin-right: 20px;
+  }
+  nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+  }
+  nav ul li a{
+    color: goldenrod;
+    font-size: 10px;
+    padding: 7px 20px;
+    border-radius: 3px;
+    text-transform: uppercase;
+  }
+  nav ul li a.active, nav ul li a:hover{
+    background: gold;
+    color: black;
+    transition: .5s;
+  }
+  .checkbtn{
+    font-size: 30px;
+    color: goldenrod;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check{
+    display: none;
+  }
+
+  @media (max-width: 952px){
+    .logo{
+        width: 60px;
+        height: 60px;
+      line-height: 80px;
+      margin: 10px; 
+      transition: ease; 
+    }
+    nav ul li a{
+      font-size: 10px;
+    }
+  }
+  @media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+
+    ul{
+      position: fixed;
+      width: 100%;
+      z-index: 2;
+      height: 100vh;
+      background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url("background.jpg");
+      background-position: center;
+      top: 80px;
+      right: 100%;
+      text-align: center;
+      transition: all .5s;
+    }
+    nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+    nav ul li a{
+      font-size: 20px;
+    }
+    a:hover,a.active{
+      background: none;
+      color: white;
+    }
+    #check:checked ~ ul{
+      right: 0;
+      background: block;
+      }
+      
+  }
+  section{
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url("background.jpg") ;
+    background-size: cover;
+    background-position: center;
+    height: calc(100vh - 80px);
+  }
+  .content{
+    width: 100%;
+    position: absolute;
+    top: 60%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+  }
+
+  .content h1{
+      font-size: 60px;
+      margin-top: 10px;
+  }
+
+  .content p{
+      margin: 20px auto;
+      font-weight: 10;
+      line-height: px;
+  }
+  .content h6{
+    margin: 5px;
+}
+
+.fa-facebook-f{
+    font-size: 42px;
+    background: transparent;
+    color: blue;
+    margin: 10px 5px;
+    padding: 5px 12px;
+    border: 2px solid blue;
+    border-radius: 12px;
+}
+
+.fa-facebook-f:hover{
+    color:white;
+    background: blue;
+}
+.fa-instagram{
+    font-size: 40px;
+    background: transparent;
+    margin: 10px 5px;
+    padding: 5px 12px;
+    border: 2px solid;
+    border-radius: 15px;
+}
+
+.fa-instagram:hover{
+    color:white;
+    background: purple;
+}
