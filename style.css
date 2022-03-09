@@ -20,8 +20,8 @@
       width: 80px;
       height: 80px;
     line-height: 80px;
-      margin-left: 50px;
-  }
+      margin-left: 50px; 
+      position: absolute;  }
   nav ul{
     float: right;
     margin-right: 20px;
@@ -101,15 +101,18 @@
       right: 0;
       background: block;
       }
+    
       
   }
   section{
-    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url("background.jpg") ;
+    background-image: url("background.jpg") ;
     background-size: cover;
     background-position: center;
-    height: calc(100vh - 80px);
+    display: contents;
   }
   .content{
+    margin: 20px;
+    padding: 20px;
     width: 100%;
     position: absolute;
     top: 60%;
@@ -121,7 +124,6 @@
   .content h1{
       font-size: 60px;
       margin-top: 10px;
-      word-wrap: break-word;
   }
 
   .content p{
