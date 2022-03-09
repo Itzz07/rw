@@ -7,9 +7,9 @@
     box-sizing: border-box;
     font-family: 'Nunito', sans-serif;
   }
-  /* body{
-      display:contents;
-  } */
+  body{
+        background: black;
+  }
   nav{
     background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url("background.jpg");
     height: 80px;
@@ -121,6 +121,7 @@
   .content h1{
       font-size: 60px;
       margin-top: 10px;
+      word-wrap: break-word;
   }
 
   .content p{
