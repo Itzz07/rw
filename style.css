@@ -8,10 +8,13 @@
     font-family: 'Nunito', sans-serif;
   }
   body{
-        background: black;
+    display: inline;
+    background: fixed;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url("background.jpg");
+    background-size: cover;
   }
   nav{
-    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url("background.jpg");
+    background:transparent;
     height: 80px;
     width: 100%;
   }
@@ -21,7 +24,10 @@
       height: 80px;
     line-height: 80px;
       margin-left: 50px; 
-      position: absolute;  }
+      position: absolute;
+      cursor: pointer;
+
+  }
   nav ul{
     float: right;
     margin-right: 20px;
@@ -60,8 +66,8 @@
     .logo{
         width: 60px;
         height: 60px;
-      line-height: 80px;
-      margin: 10px; 
+        margin-top: 10px;
+      margin-left: 20px; 
       transition: ease; 
     }
     nav ul li a{
@@ -100,19 +106,21 @@
     #check:checked ~ ul{
       right: 0;
       background: block;
+      background-size: cover;
       }
-    
+      .content h1{
+        font-size: 30px;
+        transition: ease;
+      }
       
   }
   section{
     background-image: url("background.jpg") ;
     background-size: cover;
     background-position: center;
-    display: contents;
+    
   }
   .content{
-    margin: 20px;
-    padding: 20px;
     width: 100%;
     position: absolute;
     top: 60%;
@@ -123,7 +131,7 @@
 
   .content h1{
       font-size: 60px;
-      margin-top: 10px;
+      margin: 40px;
   }
 
   .content p{
