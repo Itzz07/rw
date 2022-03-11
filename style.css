@@ -10,7 +10,7 @@
   body{
     
     background: fixed;
-    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url("background.jpg");
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("background.jpg");
     background-size: cover;
   }
   nav{
@@ -62,11 +62,6 @@
   }
 
   @media (max-width: 952px){
-    .content h1{
-      text-align: center !important;
-        font-size: 60px;
-        padding: 40px;
-    }
     .logo{
         width: 60px;
         height: 60px;
@@ -132,7 +127,7 @@
 
   .content h1{
     text-align: center;
-      font-size: 50px;
+      font-size: 60px;
       margin: 40px;
   }
 
@@ -149,7 +144,7 @@
     font-size: 42px;
     background: transparent;
     color: blue;
-    margin: 10px 5px;
+    margin: 20px 5px;
     padding: 5px 12px;
     border: 2px solid blue;
     border-radius: 12px;
@@ -162,7 +157,7 @@
 .fa-instagram{
     font-size: 40px;
     background: transparent;
-    margin: 10px 5px;
+    margin: 20px 5px;
     padding: 5px 12px;
     border: 2px solid;
     border-radius: 15px;
