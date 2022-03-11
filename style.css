@@ -8,7 +8,7 @@
     font-family: 'Nunito', sans-serif;
   }
   body{
-    display: inline;
+    
     background: fixed;
     background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url("background.jpg");
     background-size: cover;
@@ -26,7 +26,6 @@
       margin-left: 50px; 
       position: absolute;
       cursor: pointer;
-
   }
   nav ul{
     float: right;
@@ -63,19 +62,24 @@
   }
 
   @media (max-width: 952px){
+    .content h1{
+      text-align: center !important;
+        font-size: 60px;
+        padding: 40px;
+    }
     .logo{
         width: 60px;
         height: 60px;
-        margin-top: 10px;
-      margin-left: 20px; 
-      transition: ease; 
+        margin-top: 8px;
+        margin-left: 30px; 
+        transition: ease; 
+      }
+      nav ul li a{
+        font-size: 10px;
+      }
     }
-    nav ul li a{
-      font-size: 10px;
-    }
-  }
-  @media (max-width: 858px){
-    .checkbtn{
+    @media (max-width: 858px){
+      .checkbtn{
         display: block;
     }
 
@@ -114,23 +118,21 @@
       }
       
   }
-  section{
-    background-image: url("background.jpg") ;
-    background-size: cover;
-    background-position: center;
-    
-  }
+
   .content{
     width: 100%;
     position: absolute;
     top: 60%;
+    align-items: center;
+    justify-content: center;
     transform: translateY(-50%);
     text-align: center;
     color: white;
   }
 
   .content h1{
-      font-size: 60px;
+    text-align: center;
+      font-size: 50px;
       margin: 40px;
   }
 
@@ -169,4 +171,20 @@
 .fa-instagram:hover{
     color:white;
     background: purple;
+}
+
+@media screen and (max-width: 480px) {
+  .content h1{
+    
+      font-size: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .content{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+  }
 }
