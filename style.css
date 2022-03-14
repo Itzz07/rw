@@ -86,7 +86,7 @@
       background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url("background.jpg");
       background-position: center;
       top: 80px;
-      right: 100%;
+      right: 150%;
       text-align: center;
       transition: all .5s;
     }
@@ -156,16 +156,18 @@
 }
 .fa-instagram{
     font-size: 40px;
+    color: purple;
     background: transparent;
     margin: 20px 5px;
     padding: 5px 12px;
-    border: 2px solid;
+    border: 2px solid purple;
     border-radius: 15px;
 }
 
 .fa-instagram:hover{
     color:white;
     background: purple;
+    border: 2px solid white;
 }
 
 @media screen and (max-width: 480px) {
